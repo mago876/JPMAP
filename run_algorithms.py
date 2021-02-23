@@ -18,13 +18,12 @@ parser.add_argument('--gpu', action='store_true', default=True)
 parser.add_argument('--exp-name', type=str, default='denoising_01')
 parser.add_argument('--problem', type=str, default='denoising')  # 'compsensing', 'denoising', 'missingpixels'
 parser.add_argument('--sigma', type=int, default=5)  # Noise std in [0,255]
-parser.add_argument('--csgm-lamb', type=float, default=1.)
 parser.add_argument('--output-dim', type=int, default=100)  # Number of measurements in Compressed Sensing
 parser.add_argument('--iters-jpmap', type=int, default=350)  # Maximum number of JPMAP iterations
 parser.add_argument('--missing', type=float, default=0.8)  # Percentage of Missing Pixels
 parser.add_argument('--n-samples', type=int, default=10)  # Number of restored images
 parser.add_argument('--range-dec', action='store_true', default=False)  # Take ground truth from decoder range?
-parser.add_argument('--uzawa', action='store_true', default=False)  # Use Uzawa's beta update?
+parser.add_argument('--uzawa', action='store_true', default=False)    # Use Exponential Multiplier Method (Uzawa) for beta update?
 parser.add_argument('--alpha', type=float, default=5)  # Parameter of Uzawa algorithm
 parser.add_argument('--rho', type=float, default=100)  # Parameter of Uzawa algorithm
 parser.add_argument('--save-iters', action='store_true', default=False)  # Save JPMAP iterations?
