@@ -1,0 +1,1 @@
+{"dataset": "celeba", "network_structure": "ConvVAE", "batch_size": 128, "epochs": 100, "lr": 0.0001, "dvae_sigma": 15, "latent_dim": 64, "gpu": true, "output_path": "./pretrained_models", "exp_name": "ConvVAE_CelebA_zdim64_dvae15_ELU", "cuda": true, "x_shape": [3, 64, 64], "n_channels": [64, 128, 256, 512]}

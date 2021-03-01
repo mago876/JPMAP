@@ -1,0 +1,1 @@
+{"dataset": "mnist", "network_structure": "VAEfc", "batch_size": 128, "epochs": 200, "lr": 0.0001, "dvae_sigma": 15, "latent_dim": 8, "gpu": true, "output_path": "./pretrained_models", "exp_name": "VAEfc_MNIST_zdim8_dvae15_ELU", "cuda": true, "x_shape": [1, 28, 28], "enc_hidden_dims": [512, 512]}

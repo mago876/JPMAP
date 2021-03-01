@@ -198,7 +198,7 @@ def jpmap(y, x_shape, vae, A, x_step, sigma, xtarget=None, max_iters=500, max_it
         z = zk
 
         if save_iters:
-            print('Guardamos puntos limite x^k_infty Y z^k_infty...')
+            print('Storing limit points x^k_infty Y z^k_infty...')
             xiters_jpmap = np.vstack([xiters_jpmap, xk[None,:].cpu().detach().clone()])
             ziters_jpmap = np.vstack([ziters_jpmap, zk.cpu().detach().clone()])
             beta_k.append(beta.cpu().detach().clone())
